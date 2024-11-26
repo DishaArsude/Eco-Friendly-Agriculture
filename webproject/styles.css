@@ -1,0 +1,245 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('convert.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0);
+    
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.nav-links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-width: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 12px;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 215, 0, 0.6);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.b button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #00ff2a, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 13px;
+    padding: 0.6em 1.5em;
+    margin-top: -7px;
+    margin-left: 670px;
+}
+
+button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+    0% {
+        box-shadow: 0 0 0 0 #05bada66;
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+
+.hero {
+   
+    padding: 50px;
+    color: black;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: rgb(245, 245, 245);
+    margin-top: -10px;
+    margin-left: 30px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: rgb(255, 254, 254);
+ 
+    
+}
+
+.conversion {
+    padding: 30px;
+    margin: 50px auto;
+    background-color: none;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conversion input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 80%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.conversion button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.conversion button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: green;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    color: black;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: rgb(245, 245, 245);
+    margin-top: -150px;
+    margin-left: 330px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: rgb(255, 254, 254);
+    margin-left: 330px;
+    align-items: center;
+}
+
+
+.conversion {
+    padding: 30px;
+    margin: 50px auto;
+    background-color: none;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conversion input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 80%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.conversion button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.conversion button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: green;
+}
